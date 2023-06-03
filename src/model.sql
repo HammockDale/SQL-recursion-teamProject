@@ -1,4 +1,4 @@
-DROP TABLE city, city_way ;
+-- DROP TABLE city, city_way;
 
 CREATE TABLE city (
      id SERIAL PRIMARY KEY,
