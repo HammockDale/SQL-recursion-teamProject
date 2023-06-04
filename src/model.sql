@@ -1,4 +1,4 @@
--- DROP TABLE city, city_way;
+DROP TABLE city, city_way;
 CREATE TABLE city
 (
     id   SERIAL PRIMARY KEY,
@@ -16,10 +16,10 @@ CREATE TABLE city_way
     id        SERIAL PRIMARY KEY,
     from_city varchar not null,
     to_city   varchar not null,
-    way       int     not null
+    cost       int     not null
 );
 
-INSERT INTO city_way(from_city, to_city, way)
+INSERT INTO city_way(from_city, to_city, cost)
 VALUES ('A', 'B', 10),
        ('A', 'C', 15),
        ('A', 'D', 20),

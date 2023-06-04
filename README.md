@@ -87,7 +87,7 @@ The sample of output data you can find below. Please sort data by total_cost and
 | Exercise 01: Opposite TSP|                                                                                                                          |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Turn-in directory                     | ex01                                                                                                                     |
-| Files to turn-in                      | `team00_ex01.sql`     SQL DML statement                                                                             |
+| Files to turn-in                      | `team00_ex00.sql`     SQL DML statement                                                                             |
 | **Allowed**                               |                                                                                                                          |
 | Language                        | ANSI SQL|
 | SQL Syntax Pattern                        | Recursive Query|
