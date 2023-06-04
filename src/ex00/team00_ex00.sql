@@ -1,7 +1,3 @@
--- SELECT from_city AS tour, from_city, to_city, cost, cost as summ
--- FROM city_way
--- WHERE from_city = 'A';
-
 -- DROP MATERIALIZED VIEW view_sum;
 
 CREATE MATERIALIZED VIEW view_sum AS
