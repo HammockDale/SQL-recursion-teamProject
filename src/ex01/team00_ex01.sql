@@ -1,10 +1,6 @@
--- SELECT from_city AS tour, from_city, to_city, cost, cost as summ
--- FROM city_way
--- WHERE from_city = 'A';
+-- DROP MATERIALIZED VIEW view_sum_1;
 
--- DROP MATERIALIZED VIEW view_sum;
-
-CREATE MATERIALIZED VIEW view_sum AS
+CREATE MATERIALIZED VIEW view_sum_1 AS
 (
 WITH RECURSIVE a_traces AS (SELECT from_city as tour,
                                    from_city,
@@ -31,5 +27,5 @@ WHERE length(tour) = 7
 ORDER BY summ);
 
 SELECT summ AS total_cost, traces AS tour
-FROM view_sum
-WHERE summ = (SELECT summ FROM view_sum ORDER BY summ LIMIT 1);
+FROM view_sum_1
+ORDER BY total_cost;
